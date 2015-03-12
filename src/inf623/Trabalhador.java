@@ -51,7 +51,7 @@ public class Trabalhador extends ReceiverAdapter {
 					break;
 				}
 			} catch (Exception e) {
-				// TODO: handle exception
+				//  handle exception
 				e.printStackTrace();
 			}
 

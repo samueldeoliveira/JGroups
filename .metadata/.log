@@ -34,3 +34,24 @@ Command-line arguments:  -data C:\Users\Samuel\Desktop\INF623 - Programação Di
 
 !ENTRY org.eclipse.ui 2 2 2015-03-10 02:19:08.210
 !MESSAGE Invalid property category path: ValidationPropertiesPage (bundle: org.eclipse.wst.xml.ui, propertyPage: org.eclipse.wst.xml.ui.propertyPage.project.validation)
+!SESSION 2015-03-11 05:50:39.507 -----------------------------------------------
+eclipse.buildId=4.4.2.M20150204-1700
+java.version=1.7.0_75
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=pt_BR
+Framework arguments:  -product org.eclipse.epp.package.jee.product
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.jee.product
+
+!ENTRY org.jboss.tools.foundation.core 4 0 2015-03-11 05:59:23.263
+!MESSAGE Unable to load properties from http://download.jboss.org/jbosstools/configuration/ide-config.properties. Falling back on embedded properties
+!STACK 1
+org.eclipse.core.runtime.CoreException: Unable to retrieve properties from http://download.jboss.org/jbosstools/configuration/ide-config.properties
+	at org.jboss.tools.foundation.core.properties.internal.VersionPropertiesProvider.loadProperties(VersionPropertiesProvider.java:276)
+	at org.jboss.tools.foundation.core.properties.internal.VersionPropertiesProvider.getValue(VersionPropertiesProvider.java:151)
+	at org.jboss.tools.foundation.core.properties.internal.VersionPropertiesProvider.getValue(VersionPropertiesProvider.java:217)
+	at org.jboss.tools.central.installation.InstallationChecker.<init>(InstallationChecker.java:53)
+	at org.jboss.tools.central.installation.InstallationChecker.getInstance(InstallationChecker.java:66)
+	at org.jboss.tools.central.editors.JBossCentralEditor$HeaderText$3.run(JBossCentralEditor.java:571)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+!SUBENTRY 1 org.jboss.tools.foundation.core 4 0 2015-03-11 05:59:23.283
+!MESSAGE Unable to retrieve properties from http://download.jboss.org/jbosstools/configuration/ide-config.properties

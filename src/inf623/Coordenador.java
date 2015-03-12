@@ -42,7 +42,7 @@ public class Coordenador extends ReceiverAdapter {
 				System.out.println("Coordenador");
 				System.out.println(String.format("Numero de Mensagens: %d", state.size() ));
 				System.out.println(" ");
-				System.out.println("Digite uma Mensagem >");
+				System.out.print("Digite uma Mensagem >");
 				System.out.flush();
 				String line = in.readLine().toLowerCase();
 				if (line.startsWith("quit") || line.startsWith("exit"))
@@ -51,7 +51,7 @@ public class Coordenador extends ReceiverAdapter {
 				Message msg = new Message(addressDest, ownAddres, new Comando());
 				channel.send(msg);
 			} catch (Exception e) {
-				// TODO: handle exception
+				// handle exception
 			}
 
 		}

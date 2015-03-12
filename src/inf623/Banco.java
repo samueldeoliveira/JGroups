@@ -9,7 +9,7 @@ import java.sql.SQLException;
 public class Banco {
 	public static void main(String[] args) throws ClassNotFoundException, SQLException {
         Class.forName("com.mysql.jdbc.Driver");
-        try (Connection con = DriverManager.getConnection("jdbc:mysql://192.168.0.110/banco", "root", "123456")){
+        try (Connection con = DriverManager.getConnection("jdbc:mysql://10.70.9.61/banco", "root", "123456")){
             try (PreparedStatement ps = con.prepareStatement("select id, nome, email from Usuario")){
                 try (ResultSet rs = ps.executeQuery()){
                     while (rs.next()){
